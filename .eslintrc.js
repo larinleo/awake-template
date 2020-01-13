@@ -1,27 +1,25 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
-    node: true
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
+  node: true,
+  browser: true
   },
   extends: [
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+  'plugin:vue/recommended',
+  'eslint:recommended',
+  'prettier/vue',
+  'plugin:prettier/recommended'
   ],
-  plugins: [
-    'prettier'
-  ],
-  // add your custom rules here
   rules: {
-    "no-console": "off",
-    "vue/no-v-html": "off",
-    "vue/html-self-closing": "off",
-    "nuxt/no-timing-in-fetch-data": "off"
+  'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+  'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+  'no-unused-vars': 'off',
+  'vue/no-v-html': 'off'
+  },
+  globals: {
+  $nuxt: true
+  },
+  parserOptions: {
+  parser: 'babel-eslint'
   }
-}
+  }
