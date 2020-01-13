@@ -1,25 +1,25 @@
 module.exports = {
   root: true,
   env: {
-  node: true,
-  browser: true
+    node: true,
+    browser: true
   },
   extends: [
-  'plugin:vue/recommended',
-  'eslint:recommended',
-  'prettier/vue',
-  'plugin:prettier/recommended'
+    'plugin:vue/recommended',
+    'eslint:recommended',
+    'prettier/vue',
+    'plugin:prettier/recommended'
   ],
   rules: {
-  'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-  'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-  'no-unused-vars': 'off',
-  'vue/no-v-html': 'off'
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-unused-vars': 'off',
+    'vue/no-v-html': 'off'
   },
   globals: {
-  $nuxt: true
+    $nuxt: true
   },
   parserOptions: {
-  parser: 'babel-eslint'
+    parser: 'babel-eslint'
   }
   }
