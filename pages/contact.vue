@@ -1,10 +1,13 @@
 <template>
-  <div id="contact-page" class="page-wrapper contact-page content-page">
+  <div
+    id="contact-page"
+    class="page-wrapper contact-page content-page"
+  >
     <site-hero
       title="Contact Us"
       subtitle="Example Contact Page"
       image="/uploads/contact-hero.jpg"
-    ></site-hero>
+    />
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <div class="tile is-ancestor">
@@ -24,7 +27,7 @@
                   "
                 />
               </figure>
-              <br />
+              <br>
               <div class="content">
                 <p>
                   <strong>
@@ -53,7 +56,10 @@
           Latest Posts
         </h3>
         <!-- Latest Posts -->
-        <posts-grid :per-row="1" :number="2" />
+        <posts-grid
+          :per-row="1"
+          :number="2"
+        />
       </template>
     </main-section>
   </div>

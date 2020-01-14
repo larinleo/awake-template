@@ -6,7 +6,7 @@
           v-if="computedTheme === 'sidebar-left'"
           class="column left-sidebar is-one-quarter"
         >
-          <slot name="sidebar"></slot>
+          <slot name="sidebar" />
         </aside>
         <div
           :class="{
@@ -18,14 +18,16 @@
             'is-three-quarters': computedTheme !== 'one-column'
           }"
         >
-          <slot></slot>
+          <slot />
+          />/div>
+          <aside
+            v-if="computedTheme === 'sidebar-right'"
+            class="column right-sidebar is-one-quarter"
+          >
+            <slot name="sidebar" />
+            />e>
+          </aside>
         </div>
-        <aside
-          v-if="computedTheme === 'sidebar-right'"
-          class="column right-sidebar is-one-quarter"
-        >
-          <slot name="sidebar"></slot>
-        </aside>
       </div>
     </div>
   </main>

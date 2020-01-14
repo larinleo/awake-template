@@ -1,10 +1,13 @@
 <template>
-  <div id="about-page" class="page-wrapper about-page content-page">
+  <div
+    id="about-page"
+    class="page-wrapper about-page content-page"
+  >
     <site-hero
       title="About Us"
       subtitle="Example About Page"
       image="/uploads/about-hero.jpg"
-    ></site-hero>
+    />
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <div class="content">
@@ -52,7 +55,10 @@
                 Sooo Cool
               </p>
               <figure class="image is-1by1">
-                <opti-image width="500" height="500" />
+                <opti-image
+                  width="500"
+                  height="500"
+                />
               </figure>
             </article>
           </div>
@@ -65,7 +71,10 @@
                 Just as cool
               </p>
               <figure class="image is-1by1">
-                <opti-image width="500" height="500" />
+                <opti-image
+                  width="500"
+                  height="500"
+                />
               </figure>
             </article>
           </div>
@@ -78,7 +87,10 @@
                 that is all
               </p>
               <figure class="image is-1by1">
-                <opti-image width="500" height="500" />
+                <opti-image
+                  width="500"
+                  height="500"
+                />
               </figure>
             </article>
           </div>
@@ -89,7 +101,10 @@
         <h3 class="subtitle is-4">
           Latest Posts
         </h3>
-        <posts-grid :per-row="1" :number="2" />
+        <posts-grid
+          :per-row="1"
+          :number="2"
+        />
       </template>
     </main-section>
   </div>

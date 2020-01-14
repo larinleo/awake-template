@@ -5,14 +5,17 @@
     aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <nuxt-link class="navbar-item" to="/">
+      <nuxt-link
+        class="navbar-item"
+        to="/"
+      >
         <site-logo v-if="$siteConfig.logo === 'logo-component'" />
         <img
           v-else
           :src="$siteConfig.logo"
           :alt="$siteConfig.siteName"
           class="logo"
-        />
+        >
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
@@ -60,6 +63,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.navbar {
+  background-color: #bdbdbd;
+}
+
 .navbar-item img {
   max-height: 2rem;
 }

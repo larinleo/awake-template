@@ -1,5 +1,5 @@
 <template>
-  <div class="intersection-observer"></div>
+  <div class="intersection-observer" />
 </template>
 
 <script>
